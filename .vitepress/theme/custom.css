@@ -1,0 +1,79 @@
+/* 自定义样式 */
+.VPSidebar {
+  /* 侧边栏样式优化 */
+}
+
+.VPSidebarItem {
+  /* 侧边栏项目样式 */
+}
+
+/* 增强折叠组的视觉效果 */
+.VPSidebarItem.has-children > .VPSidebarItem > .indicator {
+  transition: transform 0.2s ease;
+}
+
+.VPSidebarItem.has-children.collapsed > .VPSidebarItem > .indicator {
+  transform: rotate(-90deg);
+}
+
+/* 目录样式优化 */
+.VPLocalNav {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+/* 自动生成的目录样式 */
+.custom-toc {
+  padding: 16px 0;
+  border-left: 2px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+  margin: 16px 0;
+}
+
+.custom-toc h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+}
+
+.custom-toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-toc li {
+  margin: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.custom-toc li::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: var(--vp-c-text-2);
+  border-radius: 50%;
+}
+
+.custom-toc a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.custom-toc a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .custom-toc {
+    padding-left: 12px;
+    margin: 12px 0;
+  }
+}
