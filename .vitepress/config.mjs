@@ -26,17 +26,22 @@ export default defineConfig({
       {
         text: '房子，伴侣，城市。',
         collapsed: false,
-        items: autoGenerateItems('./text', 'chapter1')
+        items: autoGenerateItems('./text', 'chapter1-Upward')
       },
       {
         text: '生成式英语',
         collapsed: false,
-        items: autoGenerateItems('./text', 'chapter2')
+        items: autoGenerateItems('./text', 'chapter2-eng')
       },
       {
         text: '技术相关',
         collapsed: false,
-        items: autoGenerateItems('./text', 'chapter3')
+        items: autoGenerateItems('./text', 'chapter3-technology')
+      },
+      {
+        text: 'AI 工作流',
+        collapsed: false,
+        items: autoGenerateItems('./text', 'chapter4-n8n')
       },
       {
         text: '思考迭代',
@@ -44,9 +49,9 @@ export default defineConfig({
         items: autoGenerateItems('./text', 'chapter5-update')
       },
       {
-        text: ' AI 工作流',
+        text: '代码笔记',
         collapsed: false,
-        items: autoGenerateItems('./text', 'chapter4-n8n')
+        items: autoGenerateItems('./text', 'chapter6-code')
       },
     ],
 

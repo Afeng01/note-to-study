@@ -1,0 +1,12 @@
+# 图片文件夹
+
+将你的图片文件放在这个文件夹中，然后在Markdown文件中使用相对路径引用：
+
+```markdown
+![图片描述](/images/your-image.png)
+```
+
+注意：
+- 图片路径以 `/images/` 开头（因为 public 文件夹是网站根目录）
+- 支持的图片格式：.png, .jpg, .jpeg, .gif, .svg, .webp
+- 建议使用有意义的文件名，避免中文字符
